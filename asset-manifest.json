@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FitClub/static/css/main.7acaea2f.css",
+    "main.js": "/FitClub/static/js/main.07d3183d.js",
+    "index.html": "/FitClub/index.html",
+    "main.7acaea2f.css.map": "/FitClub/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/FitClub/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
