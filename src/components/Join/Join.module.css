@@ -1,0 +1,64 @@
+.join {
+   display: flex;
+   gap: 10rem;
+   padding: 0 2rem;
+}
+
+.leftJ {
+   color: #fff;
+   font-size: 3rem;
+   font-weight: 700;
+   position: relative;
+   text-transform: uppercase;
+}
+
+.leftJ > hr {
+   border: 2px solid var(--orange);
+   border-radius: 20%;
+   margin: -10px 0;
+   position: absolute;
+   width: 10.5rem;
+}
+
+.leftJ > div {
+   display: flex;
+   gap: 1rem;
+}
+
+.strokeText {
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #fff;
+   color: transparent;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightJ {
+   align-items: flex-end;
+   display: flex;
+   justify-content: center;
+}
+
+.emailContainer {
+   background-color: grey;
+   display: flex;
+   gap: 3rem;
+   padding: 1rem 2rem;
+}
+
+.emailContainer > input {
+   background-color: initial;
+   border: none;
+   outline: none;
+   color: var(--lightGrey);
+
+}
+
+::placeholder {
+   color: var(--lightGrey);
+	font-size: 14px;
+}
+
+.emailContainer > button {
+   background-color: var(--orange);
+   color: #fff;
+}

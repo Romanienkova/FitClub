@@ -1,0 +1,125 @@
+.plansContainer {
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   margin-top: -4rem;
+   padding: 0 2rem;
+   position: relative;
+}
+
+.programsHeader {
+   color: #fff;
+   display: flex;
+   font-size: 3rem;
+   font-style: italic;
+   font-weight: 700;
+   gap: 2rem;
+   justify-content: center;
+   text-transform: uppercase;
+}
+
+.strokeText {
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #fff;
+   color: transparent;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.plans {
+   align-items: center;
+   display: flex;
+   gap: 3rem;
+   justify-content: center;
+}
+
+.plansBlur1 {
+   height: 23rem;
+   left: 0;
+   top: 6rem;
+   width: 32rem;
+   background: rgba(253, 120, 43, 0.69);
+   border-radius: 50%;
+   -webkit-filter: blur(212px);
+   filter: blur(212px);
+   -webkit-filter: blur(150px);
+   filter: blur(150px);
+   position: absolute;
+   z-index: -9;
+}
+
+.plansBlur2 {
+   height: 23rem;
+   right: 0;
+   top: 10rem;
+   width: 32rem;
+   background: rgba(253, 120, 43, 0.69);
+   border-radius: 50%;
+   -webkit-filter: blur(212px);
+   filter: blur(212px);
+   -webkit-filter: blur(150px);
+   filter: blur(150px);
+   position: absolute;
+   z-index: -9;
+}
+
+.plans > :nth-child(2) > svg {
+   fill: #fff;
+}
+
+.plans > :nth-child(2) > button {
+   color: orange;
+}
+
+.plan {
+   background: var(--caloryCard);
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   padding: 1.5rem;
+   width: 15rem;
+}
+
+.plan > svg {
+   fill: var(--orange);
+   height: 2rem;
+   width: 2rem;
+}
+
+.plan:nth-child(2) {
+   background: var(--planCard);
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.plan > :nth-child(2) {
+   font-size: 1rem;
+   font-weight: 700;
+}
+
+.plan > :nth-child(3) {
+   font-size: 3rem;
+   font-weight: 700;
+}
+
+.feature,
+.features {
+   display: flex;
+   gap: 1rem;
+}
+
+.features {
+   flex-direction: column;
+}
+
+.feature {
+   align-items: center;
+}
+
+.feature > img {
+   width: 1rem;
+}
+
+.plan > :nth-child(5) {
+   font-size: 0.8rem;
+}

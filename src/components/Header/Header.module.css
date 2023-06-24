@@ -1,0 +1,26 @@
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   width: 10rem;
+   height: 3rem;
+}
+
+.headerMenu {
+   display: flex;
+   gap: 2rem;
+}
+
+.headerMenuItem{
+	color: var(--white);
+	transition: color var(--duration-timing);
+}
+
+.headerMenuItem:hover,
+.headerMenuItem>a:focus {
+   color: var(--orange);
+	outline: transparent;
+}

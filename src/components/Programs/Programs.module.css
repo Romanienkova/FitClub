@@ -1,0 +1,67 @@
+.programs {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   padding: 0 2rem;
+}
+
+.programsHeader {
+   color: #fff;
+   display: flex;
+   font-size: 3rem;
+   font-style: italic;
+   font-weight: 700;
+   gap: 5rem;
+   justify-content: center;
+   text-transform: uppercase;
+}
+
+.strokeText {
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #fff;
+   color: transparent;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.joinNow {
+   align-items: center;
+   display: flex;
+   gap: 2rem;
+}
+
+.category,
+.programsCategories {
+   display: flex;
+   gap: 1rem;
+}
+
+.category {
+   background-color: var(--caloryCard);
+   color: var(--white);
+   flex: 1 1;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 2rem;
+	transition: all var(--duration-timing);
+}
+
+.category > :first-child {
+   fill: var(--white);
+   height: 2rem;
+   width: 2rem;
+}
+
+.category > :nth-child(2) {
+   font-size: 1rem;
+   font-weight: 700;
+}
+
+.category > :nth-child(3) {
+   font-size: 0.9rem;
+   line-height: 25px;
+}
+
+.category:hover {
+   background: var(--planCard);
+	cursor: pointer;
+}

@@ -1,0 +1,86 @@
+.testimonials {
+   display: flex;
+   gap: 1rem;
+   padding: 0 2rem;
+}
+
+.leftT {
+   color: #fff;
+   display: flex;
+   flex: 1.1 1;
+   flex-direction: column;
+   gap: 2rem;
+   text-transform: uppercase;
+}
+
+.leftT > :first-child {
+   color: var(--orange);
+   font-weight: 700;
+}
+
+.leftT > :nth-child(2),
+.leftT > :nth-child(3) {
+   font-size: 3rem;
+   font-weight: 700;
+}
+
+.leftT > :nth-child(4) {
+   letter-spacing: 2px;
+   line-height: 40px;
+   text-align: justify;
+   text-transform: none;
+}
+
+.strokeText {
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #fff;
+   color: transparent;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.rightT {
+   flex: 1 1;
+   position: relative;
+}
+
+.rightT > :first-child,
+.rightT > img {
+   height: 20rem;
+   position: absolute;
+   width: 17rem;
+}
+
+.rightT > img {
+   object-fit: cover;
+   right: 8rem;
+   top: 2rem;
+}
+
+.rightT>:first-child {
+    background-color: initial;
+    border: 2px solid orange;
+    right: 9rem;
+    top: 0.9rem;
+}
+
+.rightT > :nth-child(2) {
+   background: var(--planCard);
+   height: 19rem;
+   position: absolute;
+   right: 7rem;
+   top: 4rem;
+   width: 17rem;
+}
+
+.arrows {
+    bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+    left: 3rem;
+    position: absolute;
+}
+
+.arrows > img {
+   cursor: pointer;
+   width: 1.5rem;
+}
