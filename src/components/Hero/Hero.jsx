@@ -5,14 +5,16 @@ import Heart from 'assets/heart.png';
 import Calories from 'assets/calories.png';
 
 import { motion } from 'framer-motion';
+import NumberCounter from 'number-counter';
 
 import s from '../App.module.css';
 import css from './Hero.module.css';
 
 export const Hero = () => {
    const transition = { type: 'spring', duration: 3 };
+   const mobile = window.innerWidth <= 768 ? true : false;
    return (
-      <section className={css.hero}>
+      <section className={css.hero} id="home">
          <div className={css.heroBlur}></div>
          <div className={css.leftH}>
             <Header />
@@ -21,7 +23,7 @@ export const Hero = () => {
             <div className={css.bestAd}>
                <motion.div
                   className={css.bestAdEl}
-                  initial={{ left: '238px' }}
+                  initial={{ left: mobile ? '178px' : '238px' }}
                   whileInView={{ left: '8px' }}
                   transition={{ ...transition, type: 'tween' }}
                ></motion.div>
@@ -46,15 +48,38 @@ export const Hero = () => {
             {/* Figures */}
             <div className={css.figures}>
                <div>
-                  <span>+ 140</span>
+                  <span>
+                     <NumberCounter
+                        end={140}
+                        start={100}
+                        delay={4}
+                        preFix="+"
+                     />
+                  </span>
                   <span>Expert coaches</span>
                </div>
                <div>
-                  <span>+ 978</span>
+                  <span>
+                     <NumberCounter
+                        end={978}
+                        start={800}
+                        delay={4}
+                        preFix="+"
+                     />
+                  </span>
+
                   <span>Members joined</span>
                </div>
                <div>
-                  <span>+ 50</span>
+                  <span>
+                     <NumberCounter
+                        end={50}
+                        start={20}
+                        delay={4}
+                        preFix="+"
+                     />
+                  </span>
+
                   <span>Fitness programs</span>
                </div>
             </div>
@@ -93,7 +118,6 @@ export const Hero = () => {
                src={hero_image}
                alt="hero_image"
                width={368}
-               height={523}
             />
             <motion.img
                initial={{ right: '11rem' }}
@@ -103,7 +127,6 @@ export const Hero = () => {
                src={hero_image_back}
                alt="hero_image_back"
                width={240}
-               height={417}
             />
 
             {/* calories */}

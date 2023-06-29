@@ -14,13 +14,24 @@
    gap: 2rem;
 }
 
-.headerMenuItem{
-	color: var(--white);
-	transition: color var(--duration-timing);
+.headerMenuItem {
+   color: var(--white);
+   transition: color var(--duration-timing);
 }
 
 .headerMenuItem:hover,
-.headerMenuItem>a:focus {
+.headerMenuItem > a:focus {
    color: var(--orange);
-	outline: transparent;
+   outline: transparent;
+}
+
+@media screen and (max-width: 768px) {
+   .headerMenu {
+      background-color: var(--appColor);
+      flex-direction: column;
+      padding: 2rem;
+      position: fixed;
+      right: 2rem;
+      z-index: 99;
+   }
 }

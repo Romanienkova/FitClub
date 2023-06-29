@@ -62,6 +62,8 @@
    gap: 1.5rem;
    text-overflow: inherit;
    text-transform: uppercase;
+	position: relative;
+	z-index: 1;
 }
 
 .heroTextLast {
@@ -165,11 +167,10 @@
 }
 
 .heroImage {
-	width: 368px;
-	height: 523px;
-   position: absolute;
-   right: 8rem;
-   top: 10rem;
+    position: absolute;
+    right: 8rem;
+    top: 10rem;
+    width: 23rem;
 }
 
 .heroImageBack {
@@ -219,4 +220,72 @@
    height: 30rem;
    left: 0;
    width: 22rem;
+}
+
+@media screen and (max-width: 768px) {
+   .hero {
+      flex-direction: column;
+   }
+   .heroBlur {
+      width: 14rem;
+   }
+   .bestAd {
+      align-self: center;
+      font-size: small;
+      margin-top: 0;
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+   }
+   .heroText {
+      align-items: center;
+      font-size: xx-large;
+      justify-content: center;
+   }
+   .heroText > div:nth-of-type(3) {
+      font-size: small;
+      font-weight: 200;
+      letter-spacing: 1px;
+      text-align: center;
+   }
+   .heroButtons {
+      justify-content: center;
+   }
+   .figures > div > span:nth-of-type(1) {
+      font-size: large;
+   }
+   .figures > div > span:nth-of-type(2) {
+      font-size: small;
+   }
+   .rightH {
+      position: relative;
+      background: none;
+   }
+   .heartRate {
+      left: 1rem;
+      top: 2rem;
+   }
+   .calories {
+      left: 2rem;
+      position: relative;
+      top: 5rem;
+   }
+   .calories > img {
+      width: 2rem;
+   }
+   .calories > div > :nth-child(2) {
+      color: #fff;
+      font-size: 1rem;
+   }
+	.heroImage {
+    align-self: center;
+    left: 7rem;
+    position: relative;
+    top: 4rem;
+    width: 240px;
+}
+.heroImageBack {
+    left: 2rem;
+    top: 0;
+    width: 15rem;
+}
 }

@@ -56,11 +56,11 @@
    top: 2rem;
 }
 
-.rightT>:first-child {
-    background-color: initial;
-    border: 2px solid orange;
-    right: 9rem;
-    top: 0.9rem;
+.rightT > :first-child {
+   background-color: initial;
+   border: 2px solid orange;
+   right: 9rem;
+   top: 0.9rem;
 }
 
 .rightT > :nth-child(2) {
@@ -73,14 +73,47 @@
 }
 
 .arrows {
-    bottom: 1rem;
-    display: flex;
-    gap: 1rem;
-    left: 3rem;
-    position: absolute;
+   bottom: 1rem;
+   display: flex;
+   gap: 1rem;
+   left: 3rem;
+   position: absolute;
 }
 
 .arrows > img {
    cursor: pointer;
    width: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+   .testimonials {
+      flex-direction: column;
+   }
+   .leftT > :nth-child(2),
+   .leftT > :nth-child(3) {
+      font-size: xx-large;
+   }
+   .rightT {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+   }
+   .rightT > div {
+      display: none;
+      position: relative;
+   }
+	.rightT>img {
+    align-self: center;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+   .rightT > :last-child {
+      bottom: 0;
+      display: flex;
+      left: 0;
+   }
+	
 }

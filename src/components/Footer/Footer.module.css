@@ -20,6 +20,25 @@
    padding: 1rem 2rem;
 }
 
+.Footer-container>:nth-child(3)
+{
+    bottom: 0;
+    right: 15%;
+    width: 26rem;
+    height: 12rem;
+    filter: blur(200px);
+    background: red;
+}
+.Footer-container>:nth-child(4)
+{
+    bottom: 0;
+    left: 15%;
+    width: 26rem;
+    height: 12rem;
+    filter: blur(200px);
+    background: rgb(255, 115, 0);
+}
+
 .blurF1,
 .blurF2 {
    background: red;
@@ -29,7 +48,7 @@
 	margin-top: 230px;
 
    z-index: -9;
-   height: 192px;
+   height: 122px;
    width: 416px;
 }
 
@@ -47,4 +66,11 @@
    cursor: pointer;
    height: 2rem;
    width: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+.blurF1{
+   width: 180px;;
+
+}
 }

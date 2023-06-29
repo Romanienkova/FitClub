@@ -42,7 +42,7 @@
    flex-direction: column;
    justify-content: space-between;
    padding: 2rem;
-	transition: all var(--duration-timing);
+   transition: all var(--duration-timing);
 }
 
 .category > :first-child {
@@ -63,5 +63,21 @@
 
 .category:hover {
    background: var(--planCard);
-	cursor: pointer;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+   .programsCategories,
+   .programsHeader {
+      flex-direction: column;
+   }
+
+   .programsHeader {
+      flex-direction: column;
+      gap: 1rem;
+      font-size: x-large;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+   }
 }

@@ -7,7 +7,7 @@ import s from '../App.module.css';
 
 export const Plans = () => {
    return (
-      <div className={css.plansContainer}>
+      <div className={css.plansContainer} id='plans'>
          <div className={css.plansBlur1}></div>
          <div className={css.plansBlur2}></div>
 

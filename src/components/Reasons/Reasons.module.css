@@ -97,3 +97,29 @@
    width: 40px;
    height: 28px;
 }
+
+@media screen and (max-width: 768px) {
+   .reasons {
+      flex-direction: column;
+   }
+   .leftR {
+      grid-auto-rows: auto;
+      overflow: hidden;
+   }
+   .leftR > :first-child {
+      height: 17rem;
+      width: 7rem;
+   }
+   .leftR > :nth-child(2) {
+      height: 10rem;
+      width: 15rem;
+   }
+   .leftR > :nth-child(3) {
+      height: 96px;
+      width: 7rem;
+   }
+   .leftR > :nth-child(4) {
+      height: 6rem;
+      width: 7rem;
+   }
+}

@@ -50,15 +50,31 @@
    border: none;
    outline: none;
    color: var(--lightGrey);
-
 }
 
 ::placeholder {
    color: var(--lightGrey);
-	font-size: 14px;
+   font-size: 14px;
 }
 
 .emailContainer > button {
    background-color: var(--orange);
    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+   .join {
+      gap: 1rem;
+   }
+   .join,
+   .leftJ {
+      flex-direction: column;
+   }
+   .leftJ {
+      font-size: x-large;
+
+   }
+   .rightJ {
+      padding: 2rem;
+   }
 }
